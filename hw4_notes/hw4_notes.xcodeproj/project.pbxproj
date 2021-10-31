@@ -14,6 +14,7 @@
 		3C0D1957272F204000BB476D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0D1956272F204000BB476D /* Assets.xcassets */; };
 		3C0D195A272F204000BB476D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0D1958272F204000BB476D /* LaunchScreen.storyboard */; };
 		3C0D1962272F230500BB476D /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D1961272F230500BB476D /* NoteCell.swift */; };
+		3C0D1964272F2AC500BB476D /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0D1963272F2AC500BB476D /* NoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3C0D1959272F204000BB476D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C0D195B272F204000BB476D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C0D1961272F230500BB476D /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		3C0D1963272F2AC500BB476D /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,12 @@
 				3C0D194D272F203E00BB476D /* AppDelegate.swift */,
 				3C0D194F272F203E00BB476D /* SceneDelegate.swift */,
 				3C0D1951272F203E00BB476D /* ViewController.swift */,
+				3C0D1961272F230500BB476D /* NoteCell.swift */,
+				3C0D1963272F2AC500BB476D /* NoteViewController.swift */,
 				3C0D1953272F203E00BB476D /* Main.storyboard */,
 				3C0D1956272F204000BB476D /* Assets.xcassets */,
 				3C0D1958272F204000BB476D /* LaunchScreen.storyboard */,
 				3C0D195B272F204000BB476D /* Info.plist */,
-				3C0D1961272F230500BB476D /* NoteCell.swift */,
 			);
 			path = hw4_notes;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				3C0D1952272F203E00BB476D /* ViewController.swift in Sources */,
 				3C0D194E272F203E00BB476D /* AppDelegate.swift in Sources */,
 				3C0D1950272F203E00BB476D /* SceneDelegate.swift in Sources */,
+				3C0D1964272F2AC500BB476D /* NoteViewController.swift in Sources */,
 				3C0D1962272F230500BB476D /* NoteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

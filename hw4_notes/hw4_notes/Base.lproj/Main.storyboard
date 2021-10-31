@@ -87,6 +87,48 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
         </scene>
+        <!--Note View Controller-->
+        <scene sceneID="fRm-sf-wmm">
+            <objects>
+                <viewController storyboardIdentifier="NoteViewController" id="pj7-VZ-6Fu" customClass="NoteViewController" customModule="hw4_notes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3c-sN-13z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b9k-uh-Tk2">
+                                <rect key="frame" x="16" y="100" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hG7-1B-6Ds">
+                                <rect key="frame" x="16" y="150" width="382" height="696"/>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q1O-ND-8j9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q1O-ND-8j9" firstAttribute="trailing" secondItem="b9k-uh-Tk2" secondAttribute="trailing" constant="16" id="6NE-c2-axZ"/>
+                            <constraint firstItem="q1O-ND-8j9" firstAttribute="bottom" secondItem="hG7-1B-6Ds" secondAttribute="bottom" constant="16" id="B0T-V2-jsP"/>
+                            <constraint firstItem="hG7-1B-6Ds" firstAttribute="leading" secondItem="q1O-ND-8j9" secondAttribute="leading" constant="16" id="BsB-Tm-fpa"/>
+                            <constraint firstItem="b9k-uh-Tk2" firstAttribute="leading" secondItem="q1O-ND-8j9" secondAttribute="leading" constant="16" id="P1X-Jv-3vg"/>
+                            <constraint firstItem="q1O-ND-8j9" firstAttribute="trailing" secondItem="hG7-1B-6Ds" secondAttribute="trailing" constant="16" id="SZt-y1-w1U"/>
+                            <constraint firstItem="b9k-uh-Tk2" firstAttribute="top" secondItem="q1O-ND-8j9" secondAttribute="top" constant="56" id="ulI-ud-mNU"/>
+                            <constraint firstItem="hG7-1B-6Ds" firstAttribute="top" secondItem="b9k-uh-Tk2" secondAttribute="bottom" constant="16" id="wpp-Rm-lsb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyTF" destination="hG7-1B-6Ds" id="ry0-lV-T6V"/>
+                        <outlet property="titleTF" destination="b9k-uh-Tk2" id="Dy7-gi-YpA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVc-5e-o4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="98"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="zAy-if-GDC">
             <objects>
@@ -107,11 +149,17 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

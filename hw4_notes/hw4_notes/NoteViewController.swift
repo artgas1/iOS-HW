@@ -1,11 +1,6 @@
 import Foundation
 import UIKit
 
-struct Note {
-    let title: String
-    let body: String
-}
-
 class NoteViewController: UIViewController {
     
     @IBOutlet weak var bodyTF: UITextView!
@@ -29,8 +24,11 @@ class NoteViewController: UIViewController {
             return
         }
         
-        let note = Note(title: title, body: body)
-        outputVC!.notes.append(note)
+        let note = Note(context: outputVC.context)
+        note.title = title
+        note.body = body
+        note.creationDate = Date.now
+        outputVC.saveChanges()
         self.navigationController?.popViewController(animated: true)
     }
 }

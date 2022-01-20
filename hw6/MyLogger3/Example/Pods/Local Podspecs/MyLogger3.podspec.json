@@ -1,0 +1,22 @@
+{
+  "name": "MyLogger3",
+  "version": "0.1.0",
+  "summary": "A short description of MyLogger3.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Egor Fedyaev/MyLogger3",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Egor Fedyaev": "georgefed@yandex-team.ru"
+  },
+  "source": {
+    "git": "https://github.com/Egor Fedyaev/MyLogger3.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MyLogger3/Classes/**/*"
+}
